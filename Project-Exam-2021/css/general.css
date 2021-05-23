@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.knifeimg {
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.crumbs {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.searchbar {
+    display: none;
+}
+
+.searchicon {
+    border: none;
+    background-color: white;
+    color: black;
+    display: block;
+    margin-left: 330px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar-links {
+    display: none;
+    width: 100%;
+}
+
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-links ul li {
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.navbar-links ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #D03399;
+    transition: .3s ease-in-out;
+}
+
+.navwrapper .navbar-links ul li a.selected {
+    text-decoration: underline;
+    text-decoration-color: #36B29A;
+}
+
+.navbar-links.active {
+    display: flex;
+    margin: auto;
+    background-color: white;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.mainlogo {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+hr {
+    height: 7px;
+    color: #36B29A;
+    background-color: #36B29A;
+    border: none;
+}
+
+.backgrounddiv {
+    height: 300px;
+    background-color: #E1DEDE;
+    position: sticky;
+}
+
+footer {
+    height: 150px;
+    width: auto;
+    background-color: #E1DEDE;
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.footerheader {
+    font-size: 25px;
+    padding: 1px;
+}
+
+.footerleft {
+    display: none;
+    float: left;
+    margin-left: 150px;
+}
+
+.footerportrait {
+    display: none;
+}
+
+.footercontact {
+    display: none;
+}
+
+.socials a {
+    color:  #36B29A;
+    font-size: 30px;
+    display: inline-flex;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.footercontact {
+    display: block;
+}
+
+@media (min-width: 768px) {    
+
+    .crumbs {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .navbar-links ul li {
+        list-style: none;
+        padding: 1rem;
+    }
+    
+    .navbar-links ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        margin: auto;
+        background-color: white;
+    }
+
+    .searchbar {
+        display: none;
+    }
+    
+    .searchicon {
+        border: none;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-size: 22px;
+        position: absolute;
+        top: 2rem;
+        right: 1.5rem;
+        display: flex;
+    }
+}
+
+ @media (min-width: 1000px) {
+
+    .crumbs {
+        margin-left: 40px;
+        font-size: 18px;
+    }
+
+    .knifeimg {
+        width: 40px;
+        height: 40px;
+        margin-top: 40px;
+    }
+    
+    h1 {
+        margin-top: 35px;
+        margin-left: 40px;
+    }
+    
+    .toggle-button {
+        display: none;
+    }
+
+    nav {
+        margin-left: 100px;
+    }
+    
+    .navbar-links {
+        display: flex;
+        
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navbar-links ul li {
+        list-style: none;
+        padding: 2rem;
+    }
+    
+    .navbar-links ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }   
+    
+    .mainlogo {
+        font-size: 22px;
+        float: left;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .navwrapper {
+        display: flex;
+    }
+
+    footer {
+        height: 350px;
+        width: auto;
+        background-color: #E1DEDE;
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .footerheader {
+        font-size: 35px;
+        padding: 1px;
+    }
+
+    .footerleft {
+        display: block;
+        float: left;
+        margin-left: 50px;
+    }
+
+    .footerportrait {
+        height: 100px;
+        width: 100px;
+        float: left;
+        display: block;
+    }
+
+    .footercontact {
+        margin: 50px 140px;
+    }
+    
+    .socials a {
+        color: #3498db;
+        font-size: 30px;
+        display: block;
+        margin-left: 550px;
+        padding: 10px;
+    }
+    
+    .socials  {
+        font-size: 24px;
+    }
+
+    .searchicon {
+        border: none;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-size: 22px;
+        position: absolute;
+        top: 3rem;
+        right: 1.5rem;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .crumbs {
+        margin-left: 45px;
+        font-size: 18px;
+    }
+
+    .knifeimg {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+    }
+    
+    h1 {
+        margin-top: 35px;
+        font-size: 25px;
+    }
+
+    nav {
+        margin-left: 100px;
+    }
+    
+    .navbar-links {
+        display: flex;
+        margin-left: 150px;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navbar-links ul li {
+        list-style: none;
+        padding: 3rem;
+    }
+    
+    .navbar-links ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+    }   
+    
+    .mainlogo {
+        font-size: 22px;
+        float: left;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .navwrapper {
+        display: flex;
+    }
+
+    .socials a {
+        color: #3498db;
+        font-size: 30px;
+        display: block;
+        margin-left: 650px;
+        padding: 10px;
+    }
+
+    .footerleft {
+        margin-left: 200px;
+    }
+
+    .searchbar {
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 4rem;
+        right: 1.5rem;
+        display: flex;
+        border-radius: 5px;
+        width: 100px;
+        height: 25px;
+    }
+
+    .searchicon {
+    display: none;
+    }
+}
+
+@media (min-width: 1800px) {
+    .navbar-links {
+        display: flex;
+        margin-left: 500px;
+    }
+
+    .footerleft {
+        display: block;
+        float: left;
+        margin-left: 150px;
+    }
+
+    .footerportrait {
+        height: 150px;
+        width: 150px;
+        float: left;
+    }
+
+    .footercontact {
+        margin: 50px 140px 0px 200px;
+    }
+    
+    .socials a {
+        color: #3498db;
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .socials  {
+        display: inline-flex;
+    }
+
+    .searchbar {
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 4rem;
+        right:  5rem;
+        display: flex;
+        border-radius: 5px;
+        width: 200px;
+        height: 25px;
+    }
+}

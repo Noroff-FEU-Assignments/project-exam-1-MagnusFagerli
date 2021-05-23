@@ -1,0 +1,284 @@
+.thumbimg {
+    height: 250px;
+    width: 250px;
+}
+
+.recipecard {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+.recipecard a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+    text-decoration-color: #36B29A;
+}
+
+.dot {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #36B29A;
+    border-radius: 20%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 11px;
+    color: #D03399;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .recipe-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .featuredOne {
+      width: 300px;
+      height: 200px;
+      display: flex;
+      margin: auto;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: -20px;
+  }
+
+  .imgtext, a {
+      text-decoration: none;  
+      margin: auto;
+      display: block;
+      text-align: center;
+  }
+
+  .viewAll {
+    font-size: 17px;
+    margin: 50px auto;
+    display: flex;
+    background-color: #D03399;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+  @media (min-width: 768px) {
+
+    .backgrounddiv {
+      height: 350px;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      margin-left: -100px;
+      margin-right: -100px;
+      padding: 1px;
+      color: #D03399;
+      font-weight: bold;
+      font-size: 40px;
+      transition: 0.3s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .featuredOne {
+      height: 250px;
+      width: 450px;
+      margin-left: -50px;
+    }
+  
+    .recipe-container {
+      max-width: 400px;
+      position: relative;
+      margin: auto;
+    }
+
+    .blogcontainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 5px;
+      justify-content: center;
+    }
+
+    .recipediv {
+      margin: 25px;
+    }
+
+    h2 {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      text-decoration: underline;
+      text-decoration-color: #36B29A;
+    }
+
+  }
+ 
+   @media (min-width: 1000px) {
+   
+    .backgrounddiv {
+      height: 550px;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 96%;
+      margin-left: -280px;
+      margin-right: -280px;
+      padding: 1px;
+      color: #D03399;
+      font-weight: bold;
+      font-size: 40px;
+      transition: 0.3s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .featuredOne {
+      height: 450px;
+      width: 800px;
+
+    }
+
+    .mySlides {
+      display: block;
+      margin-left: -150px;
+    }
+  
+    .imgtext {
+      margin-left: 150px;
+    }
+
+    .blogcontainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 5px;
+      justify-content: center;
+    }
+
+    .recipediv {
+      margin: 25px;
+    }
+
+    .recipecard {
+      width: 400px;
+  }
+
+    .summary {
+      font-size: 19px;
+      
+    }
+
+    h2 {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      text-decoration: underline;
+      text-decoration-color: #36B29A;
+      font-size: 30px;
+    } 
+
+    .thumbimg {
+      transition: 0.3s all ease-in-out;
+      height: 350px;
+      width: 350px;
+    }
+
+    .thumbimg:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  @media (min-width: 1440px) {
+   
+    .backgrounddiv {
+      height: 550px;
+    }
+  
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 96%;
+      margin-left: -300px;
+      margin-right: -300px;
+      padding: 1px;
+      color: #D03399;
+      font-weight: bold;
+      font-size: 40px;
+      transition: 0.3s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .featuredOne {
+      height: 450px;
+      width: 800px;
+    }
+
+    .mySlides {
+      display: block;
+      margin-left: -150px;
+    }
+
+  }

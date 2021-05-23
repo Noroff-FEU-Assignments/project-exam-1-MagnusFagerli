@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.knivespic {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.description {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+}
+
+ @media (min-width: 1000px) {
+
+    .knivespic {
+        height: 600px;
+        width: 600px;
+        display: block;
+    }
+
+}

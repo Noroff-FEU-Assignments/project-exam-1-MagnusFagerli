@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my collection of recipes!">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cb8e4840e.js" crossorigin="anonymous"></script>
+    <title>Home - Recipes From My Years</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navwrapper">
+            <div class="mainlogo">
+
+                <h1>Recipes From My Years</h1>
+                <img src="images/knife.png" class="knifeimg">
+                <input type="text" class="searchbar" placeholder="Find a recipe..">
+                <button type="submit" class="searchicon"><i class="fa fa-search"></i></button>
+            </div>
+
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" class="selected">Home</a></li>
+                    <li><a href="allblogs.html">All Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <hr class="undernav">
+    <div class="backgrounddiv">
+        <div class="recipe-container">
+
+            <div class="mySlides">
+                <a href="allblogs.html"><img class="featuredOne" src="/images/SH_cacio_e_pepe.jpg">
+                    <div class="imgtext">Cacio e Pepe</div>
+                </a>
+            </div>
+
+            <div class="mySlides">
+                <a href="allblogs.html"><img class="featuredOne" src="/images/meat-lasagna-1200.jpg">
+                    <div class="imgtext">Lasagna</div>
+                </a>
+            </div>
+
+            <div class="mySlides">
+                <a href="allblogs.html"><img class="featuredOne"
+                        src="/images/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg">
+                    <div class="imgtext">Gnocchi</div>
+                </a>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+        <h2>Latest Recipes</h2>
+        <div class="blogcontainer">
+        </div>
+
+        <a href="allblogs.html"><button class="viewAll">View All Recipes</button></a>
+
+
+        <footer>
+            <div class="footerheader">
+                <h6>Recipes From My Years</h6>
+            </div>
+            <div class="footerleft">
+                <img src="/images/portrait2.png" class="footerportrait" alt="Portrait of 'me'.">
+                <p>My name is Magnus, and this blog is my collection of</br> recipes from my years in professional
+                    kitchens.
+                </p>
+                <div class="footercontact">
+                    <a href="contact.html">Send me your suggestions!</a>
+                </div>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <script src="javascript/navigation.js"></script>
+        <script src="javascript/apifetch.js"></script>
+        <script src="javascript/slideshow.js"></script>
+</body>
+
+</html>
